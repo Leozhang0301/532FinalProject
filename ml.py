@@ -233,8 +233,7 @@ config = {
         'lr': 0.001,                 
         'momentum': 0.9              
     },
-    'early_stop': 200,               
-    'save_path': 'models/model.pth'  
+    'early_stop': 200,
 }
 
 
@@ -257,7 +256,6 @@ plot_pred(dv_set, model, device)  # Show prediction on the validation set
 
 
 def save_pred(preds, file):
-    ''' Save predictions to specified file '''
     print('Saving results to {}'.format(file))
     with open(file, 'w') as fp:
         writer = csv.writer(fp)
